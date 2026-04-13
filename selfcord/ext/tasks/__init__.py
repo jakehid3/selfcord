@@ -40,12 +40,12 @@ from typing import (
 )
 
 import aiohttp
-import discord
+import selfcord as discord
 import inspect
 
 from collections.abc import Sequence
-from discord.backoff import ExponentialBackoff
-from discord.utils import MISSING
+from selfcord.backoff import ExponentialBackoff
+from selfcord.utils import MISSING
 
 _log = logging.getLogger(__name__)
 

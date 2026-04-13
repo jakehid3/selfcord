@@ -36,7 +36,7 @@ import curl_cffi
 import curl_cffi.requests.impersonate
 from discord_protos import __version__ as protos_version  # Avoid breaking selfcord
 
-import discord
+import selfcord as discord
 
 
 def show_version() -> None:
@@ -69,8 +69,8 @@ def core(parser: argparse.ArgumentParser, args: argparse.Namespace) -> None:
 
 _bot_template = """#!/usr/bin/env python3
 
-from discord.ext import commands
-import discord
+from selfcord.ext import commands
+import selfcord as discord
 import config
 
 class Bot(commands.Bot):
@@ -125,8 +125,8 @@ var/
 config.py
 """
 
-_cog_template = '''from discord.ext import commands
-import discord
+_cog_template = '''from selfcord.ext import commands
+import selfcord as discord
 
 class {name}(commands.Cog{attrs}):
     """The description for {name} goes here."""

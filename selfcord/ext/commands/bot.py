@@ -49,8 +49,8 @@ from typing import (
     overload,
 )
 
-import discord
-from discord.utils import MISSING, _is_submodule
+import selfcord as discord
+from selfcord.utils import MISSING, _is_submodule
 
 from .core import GroupMixin
 from .view import StringView
@@ -64,8 +64,8 @@ if TYPE_CHECKING:
 
     import importlib.machinery
 
-    from discord.message import Message
-    from discord.abc import User
+    from selfcord.message import Message
+    from selfcord.abc import User
     from ._types import (
         _Bot,
         BotT,
@@ -74,7 +74,7 @@ if TYPE_CHECKING:
         ContextT,
         MaybeAwaitableFunc,
     )
-    from discord.client import _ClientOptions
+    from selfcord.client import _ClientOptions
 
     _Prefix = Union[Iterable[str], str]
     _PrefixCallable = MaybeAwaitableFunc[[BotT, Message], _Prefix]

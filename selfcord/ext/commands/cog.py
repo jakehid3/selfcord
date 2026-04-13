@@ -26,7 +26,7 @@ from __future__ import annotations
 
 import inspect
 import logging
-from discord.utils import maybe_coroutine, MISSING
+from selfcord.utils import maybe_coroutine, MISSING
 
 from typing import (
     Any,

@@ -45,8 +45,9 @@ from typing import (
     TypedDict,
 )
 
-import discord.utils
-from discord.utils import MISSING
+import selfcord as discord
+import selfcord.utils
+from selfcord.utils import MISSING
 
 from .core import Group, Command, get_signature_parameters
 from .errors import CommandError
@@ -54,7 +55,7 @@ from .errors import CommandError
 if TYPE_CHECKING:
     from typing_extensions import Self, Unpack
 
-    import discord.abc
+    import selfcord.abc
 
     from .bot import BotBase
     from .context import Context

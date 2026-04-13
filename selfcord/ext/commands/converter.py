@@ -45,13 +45,13 @@ from typing import (
 )
 import types
 
-import discord
+import selfcord as discord
 
 from .errors import *
 
 if TYPE_CHECKING:
-    from discord.state import Channel
-    from discord.threads import Thread
+    from selfcord.state import Channel
+    from selfcord.threads import Thread
 
     from .parameters import Parameter
     from ._types import BotT, _Bot

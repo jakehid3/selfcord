@@ -40,28 +40,29 @@ from typing import (
     overload,
 )
 
-import discord.abc
-import discord.utils
-from discord.message import Message
-from discord.utils import MISSING
+import selfcord as discord
+import selfcord.abc
+import selfcord.utils
+from selfcord.message import Message
+from selfcord.utils import MISSING
 
 from ._types import BotT
 
 if TYPE_CHECKING:
     from typing_extensions import ParamSpec, TypeGuard
 
-    from discord.abc import MessageableChannel
-    from discord.commands import MessageCommand
-    from discord.file import _FileBase
-    from discord.guild import Guild
-    from discord.member import Member
-    from discord.mentions import AllowedMentions
-    from discord.message import MessageReference, PartialMessage
-    from discord.poll import Poll
-    from discord.state import ConnectionState
-    from discord.sticker import GuildSticker, StickerItem
-    from discord.user import ClientUser, User
-    from discord.voice_client import VoiceProtocol
+    from selfcord.abc import MessageableChannel
+    from selfcord.commands import MessageCommand
+    from selfcord.file import _FileBase
+    from selfcord.guild import Guild
+    from selfcord.member import Member
+    from selfcord.mentions import AllowedMentions
+    from selfcord.message import MessageReference, PartialMessage
+    from selfcord.poll import Poll
+    from selfcord.state import ConnectionState
+    from selfcord.sticker import GuildSticker, StickerItem
+    from selfcord.user import ClientUser, User
+    from selfcord.voice_client import VoiceProtocol
 
     from .cog import Cog
     from .core import Command

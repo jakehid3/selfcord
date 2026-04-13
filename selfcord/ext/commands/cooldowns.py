@@ -26,8 +26,8 @@ from __future__ import annotations
 
 
 from typing import Any, Callable, Deque, Dict, Optional, Union, Generic, TypeVar, TYPE_CHECKING
-from discord.enums import Enum
-from discord.abc import PrivateChannel
+from selfcord.enums import Enum
+from selfcord.abc import PrivateChannel
 import time
 import asyncio
 from collections import deque
@@ -38,7 +38,7 @@ from .context import Context
 if TYPE_CHECKING:
     from typing_extensions import Self
 
-    from discord.message import Message
+    from selfcord.message import Message
 
 __all__ = (
     'BucketType',

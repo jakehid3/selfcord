@@ -27,7 +27,8 @@ from __future__ import annotations
 import datetime
 from typing import Any, Callable, Dict, List, Optional, Tuple, TYPE_CHECKING, Union
 
-import discord.abc
+import selfcord as discord
+import selfcord.abc
 from .asset import Asset, AssetMixin
 from .collectible import Collectible
 from .colour import Colour

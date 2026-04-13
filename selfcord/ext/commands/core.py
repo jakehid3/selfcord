@@ -48,7 +48,7 @@ from typing import (
 )
 import re
 
-import discord
+import selfcord as discord
 
 from ._types import _BaseCommand, CogT
 from .cog import Cog
@@ -63,7 +63,7 @@ if TYPE_CHECKING:
 
     from ._types import BotT, Check, ContextT, Coro, CoroFunc, Error, Hook, UserCheck
 
-    from discord.permissions import _PermissionsKwargs
+    from selfcord.permissions import _PermissionsKwargs
 
     class _CommandDecoratorKwargs(TypedDict, total=False):
         enabled: bool
